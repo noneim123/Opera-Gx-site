@@ -1,0 +1,84 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Opera-Gx</title>
+<style type="text/css">
+html, boddy, #page-one, #page-two, #page-three, #page-four {
+    height:100%
+} 
+
+#page-one, #page-two, #page-three, #page-four {padding-top:2cm;}
+    
+#mainNav {
+    background-color: #000000;
+    color: #000000;
+    line-height:4em;
+    padding: 0 lem:
+    position:fixed;
+    top: 0em;
+    width:100%;
+}
+    
+ a, a link, visited, a:hover a:active {
+    color:#006400 
+    text=decoration:none;
+    display:inline-block;
+    padding: 0 lem
+}
+    
+a:hover {color: #000000;}
+
+h2 {font-size:3em; padding-top:lem; text-algin: center; font-family: sans-serif font-size: 3.5em; color: #006400 }
+    p{
+       font-family: sans-serif
+        font-size: 2.5em;
+        color: #006400 
+    }
+#page-one {background-color:#fff;}
+#page-two {background-color:#fff;}
+#page-three {background-color:#fff;}
+#page-four {background-color:#fff;}    
+    </style>   
+</head>
+<body>
+<nav id="mainNav">Перейти на:
+    <a href="#page-one">Главная</a>
+    <a href="#page-two">О нас</a>
+    <a href="#page-three">Браузер в телефоне</a>
+    </nav>
+
+<div id="page=one">
+    <h2>Главная</h2>
+    <p>Opera GX — это специальная геймерская версия браузера Opera. В ней реализованы уникальные функции, такие как ограничение использования ресурсов ЦП, оперативной памяти и сетевого трафика, помогающие играть и просматривать веб-страницы с максимальным удобством.</p>
+    <img src="img/1.jpg"  height="300px" width="400px" >
+</div>
+<div id="page-two">
+    <h2>О нас</h2>
+    <p>Помимо великолепного дизайна мобильная и настольная версии Opera GX могут похвастаться скоростью, обширными возможностями настройки и высоким уровнем конфиденциальности. Ознакомьтесь с эксклюзивными встроенными функциями этого браузера и узнайте, почему люди выбирают Opera GX.</p>
+    <img src="img/2.png"  height="300px" width="400px" >
+</div>
+<div id="page-three">
+    <h2>Браузер в телефоне</h2>
+    <p>Привнеси свой игровой стиль на смартфон. Обменивайся данными на мобильном и десктопном браузерах с помощью функции обмена файлами Flow, серфи в Интернете одной рукой на ходу с помощью Fast Action Button и защити свою конфиденциальность благодаря встроенному блокировщику рекламы в мобильном браузере для геймеров.</p>
+    <img src="img/3.jpg"  height="300px" width="400px" >
+    </div>
+    <script scr="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('a[href*=#]').bind('click', fuction(e)
+    e.preventDefault();
+    
+    var taget = $(this).attr("href");
+    
+    $('html, body').stopy().animate({ scrollTop: $(target).offset().top}, 500, funcition() {
+        location.hash = target;
+    });
+    
+    return false
+                                    });
+    });
+</script>
+</html>
+
+
+
